@@ -9,9 +9,9 @@ int main(void){
     printf("This process is %d\n", getpid());
     printf("The real user ID is %d\n", getuid());
     printf("The effective user ID is %d\n", geteuid());
-    printf("The effective user ID is %d\n", getgid());
-    printf("The effective user ID is %d\n", getegid());
-    printf("The effective user ID is %d\n", getppid());
+    printf("The group ID is %d\n", getgid());
+    printf("The effective group ID is %d\n", getegid());
+    printf("The process ID of parent of calling process is %d\n", getppid());
 
 
     if((val=fork())<0){
